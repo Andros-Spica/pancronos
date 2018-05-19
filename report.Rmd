@@ -1,0 +1,26 @@
+---
+title: "Pancronos report"
+output: html_notebook
+---
+
+Intro
+
+## Current data panorama
+
+Database architecture
+
+Volume, stats per continent, region, type
+
+plots
+
+## Asia
+
+Current state and scope
+
+plots
+
+### Inner Asia and China
+
+table
+
+plot
