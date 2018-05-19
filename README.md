@@ -1,5 +1,5 @@
 # pancronos
-Open source chronological world-level database for periods, events, political entities, material cultures, sites and site ocupation phases
+Open source chronological world-level database for periods, events, political entities, material cultures, sites and site occupation phases
 
 Intro
 
