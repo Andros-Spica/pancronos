@@ -5,13 +5,37 @@ output: html_notebook
 
 Intro
 
+```{r,eval=FALSE}
+require(devtools)
+install_github('jbryer/timeline')
+```
+
 ## Current data panorama
 
 Database architecture
 
 Volume, stats per continent, region, type
 
-plots
+```{r}
+source("data/load_pancronos.R")
+library(timeline)
+
+dt <- load_pancronos()
+
+imageScaleMult = 1
+
+timeline(dt, 
+         label.col = "PeriodName", group.col = "RegionName", 
+         start.col = "Start", end.col = "End",
+         text.size = imageScaleMult*3.8,
+         text.angle = 90,
+         text.position = "center",
+         text.family = "sans"
+) +
+  theme(panel.background = element_blank(),
+        axis.text.y = element_text(size = imageScaleMult*20),
+        axis.text.x = element_text(size = imageScaleMult*20))
+```
 
 ## Asia
 
